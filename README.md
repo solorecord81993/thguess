@@ -4,13 +4,14 @@
 
 ## MVP
 - Responsive game UI สำหรับมือถือและ desktop
-- 5-round location guessing game
+- Google Street View 360° แบบโต้ตอบได้ โดยผู้เล่นไม่ต้องกรอก API key
+- เกมทายสถานที่ 5 รอบ พร้อมจับเวลาและหน้าสรุปผล
 - Interactive Thailand map + distance scoring
 - Local player profile / stats
-- Leaderboard UI
-- Daily Challenge / Bangkok / Speed Run modes UI
+- คะแนนสูงสุดบนอุปกรณ์
+- โหมดทั่วประเทศไทย / Bangkok / Speed Run / Daily Challenge
 
 ## Deployment
 Production: https://thguess.vercel.app
 
-Next: Google Street View integration, cloud authentication/database, persistent leaderboard and challenges.
+Next: cloud authentication/database and online leaderboard.
