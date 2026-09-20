@@ -11,6 +11,18 @@
 - คะแนนสูงสุดบนอุปกรณ์
 - โหมดทั่วประเทศไทย / Bangkok / Speed Run / Daily Challenge
 
+## Online leaderboard
+
+อันดับออนไลน์ใช้ Upstash Redis ผ่าน Vercel Functions โดยระบบตรวจคะแนนแต่ละรอบใหม่บนเซิร์ฟเวอร์ก่อนบันทึก
+
+1. เปิดโปรเจกต์ `thguess` ใน Vercel
+2. ไปที่ Storage หรือ Marketplace แล้วติดตั้ง Upstash Redis
+3. เชื่อม Redis database เข้ากับโปรเจกต์ `thguess` ทุก environment
+4. ตรวจว่ามี `UPSTASH_REDIS_REST_URL` และ `UPSTASH_REDIS_REST_TOKEN`
+5. Redeploy production หนึ่งครั้งหลังเชื่อม integration
+
+ห้ามนำ `UPSTASH_REDIS_REST_TOKEN` ไปใส่ในโค้ดฝั่ง browser หรือ commit ลง Git
+
 ## Deployment
 Production: https://thguess.vercel.app
 
