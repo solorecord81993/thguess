@@ -18,10 +18,12 @@
 1. เปิดโปรเจกต์ `thguess` ใน Vercel
 2. ไปที่ Storage หรือ Marketplace แล้วติดตั้ง Upstash Redis
 3. เชื่อม Redis database เข้ากับโปรเจกต์ `thguess` ทุก environment
-4. ตรวจว่ามี `UPSTASH_REDIS_REST_URL` และ `UPSTASH_REDIS_REST_TOKEN`
+4. ตรวจว่ามี `KV_REST_API_URL` และ `KV_REST_API_TOKEN` (หรือชื่อเดิม
+   `UPSTASH_REDIS_REST_URL` และ `UPSTASH_REDIS_REST_TOKEN`)
 5. Redeploy production หนึ่งครั้งหลังเชื่อม integration
 
-ห้ามนำ `UPSTASH_REDIS_REST_TOKEN` ไปใส่ในโค้ดฝั่ง browser หรือ commit ลง Git
+ห้ามนำ `KV_REST_API_TOKEN` หรือ `UPSTASH_REDIS_REST_TOKEN` ไปใส่ในโค้ดฝั่ง
+browser หรือ commit ลง Git
 
 ## Deployment
 Production: https://thguess.vercel.app
